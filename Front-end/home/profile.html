@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e9ecef;
+        margin: 0;
+        padding: 0;
+      }
+
+      .employee-details {
+        background-color: #fff;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .employee-details h2 {
+        margin-top: 0;
+        color: #343a40;
+        font-size: 24px;
+      }
+
+      .employee-details p {
+        margin: 10px 0;
+        color: #6c757d;
+        font-size: 18px;
+      }
+
+      .employee-details p strong {
+        color: #343a40;
+      }
+
+      .employee-details button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .employee-details button:hover {
+        background-color: #0056b3;
+      }
+
+      .employee-details img {
+        display: block;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 4px solid #007bff;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="employee-details">
+      <a href="./home.html">⬅️</a>
+      <h2>Profile Information</h2>
+      <img src="./profile.jpg" alt="Employee Photo" id="employee-image" />
+      <p><strong>Name:</strong> <span id="employee-name">John Doe</span></p>
+      <p>
+        <strong>Email:</strong>
+        <span id="employee-email">john.doe@example.com</span>
+      </p>
+      <p>
+        <strong>Contact:</strong> <span id="employee-contact">+1234567890</span>
+      </p>
+      <p>
+        <strong>Address:</strong>
+        <span id="employee-address">123 Main St, Anytown, USA</span>
+      </p>
+      <p><strong>Salary:</strong> <span id="employee-salary"></span></p>
+
+      <a href="./update.html"><button>Update Details</button></a>
+      <a href="./Image.html"><button>Update Image</button></a>
+      <button id="delete-employee">Delete Employee</button>
+    </div>
+    <script src="./profile.js"></script>
+  </body>
+</html>

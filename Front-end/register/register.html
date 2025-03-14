@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="form-container" enctype="multipart/form-data">
+        <h2>Employee Form</h2>
+        <form id="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="sal">Salary</label>
+            <input type="text" id="sal" name="sal" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <p id="pwd-error"></p>
+
+            <label for="password1">Confirm Password</label>
+            <input type="password" id="password1" name="password1">
+
+            <label for="contact">Contact</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p style="text-align: center; margin-top: 20px;">
+            Already have an account? <a href="../login/login.html">Click here</a>
+        </p>
+    </div>
+</body>
+</html>

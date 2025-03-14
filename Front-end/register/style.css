@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 30px; /* Increased font size */
+    color: #333;
+}
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px; /* Increased font size */
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="tel"]{
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Increased font size */
+}
+.form-container button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #218838;
+}
+#pwd-error{
+    color: red;
+    margin-top: -14px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+}

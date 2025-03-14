@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      main {
+        padding: 2rem;
+        height: 50vh;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome <span id="name"></span></h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Dashboard</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li id="Logout"><a href="../index.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Dashboard</h2>
+        <p>Here you can manage your employees, view reports, and more.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Employee Management System</p>
+    </footer>
+    <script>
+      const name = sessionStorage.getItem("employeeName");
+      document.getElementById("name").textContent = name;
+      document.getElementById("Logout").addEventListener("click", () => {
+        sessionStorage.clear();
+      });
+    </script>
+  </body>
+</html>
